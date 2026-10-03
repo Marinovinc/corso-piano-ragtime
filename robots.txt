@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marinovinc.github.io/corso-piano-ragtime/sitemap.xml
