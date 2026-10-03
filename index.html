@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impara il Ragtime al pianoforte — corso gratuito</title>
+<meta name="description" content="Corso gratuito per imparare il ragtime al pianoforte a due mani, da zero, con file MIDI e un'app che mostra le note che scendono. Stride e sincope spiegati passo per passo. Anche per principianti adulti.">
+<style>
+  :root{
+    --bg:#f7efe1; --bg2:#fbf7ef; --ink:#241a0c; --ink2:#5c4a2c; --muted:#8a765a;
+    --accent:#b5651d; --accent-d:#8f4e13; --accent2:#2e6b4f; --line:#e6d8bd; --card:#fffdf8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#17120b; --bg2:#1f1810; --ink:#f3e9d8; --ink2:#cdb497; --muted:#9a865f;
+           --accent:#e08a3c; --accent-d:#c9742a; --accent2:#5bbf93; --line:#3a2e1d; --card:#221a10; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:0 22px}
+  header.hero{background:linear-gradient(160deg,var(--accent) 0%,var(--accent-d) 100%);color:#fff;padding:64px 0 56px;text-align:center}
+  .lang{text-align:right;margin-bottom:10px;font-size:.95rem}
+  .lang a{color:#fff;text-decoration:none;opacity:.8;font-weight:700;padding:0 5px}
+  .lang a.on{opacity:1;text-decoration:underline}
+  .kbd{font-size:2.6rem;letter-spacing:3px;margin-bottom:8px;opacity:.9}
+  h1{font-size:2.5rem;line-height:1.12;margin:.1em 0 .25em;font-weight:800;letter-spacing:-.01em}
+  .lead{font-size:1.3rem;opacity:.95;max-width:640px;margin:0 auto 28px}
+  .cta{display:inline-block;background:#fff;color:var(--accent-d);font-weight:800;font-size:1.2rem;text-decoration:none;padding:16px 34px;border-radius:40px;box-shadow:0 8px 22px rgba(0,0,0,.18);transition:transform .12s}
+  .cta:hover{transform:translateY(-2px)}
+  .cta small{display:block;font-weight:600;font-size:.8rem;opacity:.8;margin-top:2px}
+  section{padding:46px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.7rem;margin:0 0 6px;color:var(--accent)}
+  p{margin:12px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card .n{font-size:2.1rem;font-weight:800;color:var(--accent);line-height:1}
+  .card h3{margin:.4em 0 .2em;font-size:1.15rem}
+  .card p{margin:6px 0 0;color:var(--ink2);font-size:.98rem}
+  ul.clean{list-style:none;padding:0;margin:18px 0}
+  ul.clean li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line)}
+  ul.clean li::before{content:"\266A";position:absolute;left:0;color:var(--accent);font-size:1.2rem}
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .app b{color:var(--ink)} .app span{display:block;color:var(--muted);font-size:.9rem;margin-top:4px}
+  .free{color:var(--accent2);font-weight:700}
+  .center{text-align:center}
+  .download2{text-align:center;padding:52px 0}
+  .download2 .cta{background:var(--accent);color:#fff}
+  .donate{background:var(--bg2);text-align:center;padding:52px 0;border-bottom:1px solid var(--line)}
+  .donate .coffee{font-size:2.6rem;margin-bottom:4px}
+  .donate-btn{background:var(--accent2);color:#fff;box-shadow:0 8px 22px rgba(46,107,79,.28)}
+  footer{padding:34px 0 60px;color:var(--muted);font-size:.9rem;text-align:center}
+  .note{background:var(--bg2);border-left:4px solid var(--accent2);padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;color:var(--ink2);font-size:.96rem}
+</style>
+<script>window.goatcounter={path:function(p){return "ragtime"+(p==="/"?"/home":p);}};</script>
+<script data-goatcounter="https://corsopianoboogie.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="lang"><a class="on" href="index.html">IT</a><a href="en.html">EN</a></div>
+    <div class="kbd">&#9612;&#9612;&#9612;&#9612;&#9612;&#9612;&#9612;</div>
+    <h1>Impara il Ragtime<br>al pianoforte</h1>
+    <p class="lead">Un corso gratuito per suonare il ragtime a due mani, partendo da zero: lo
+    <b>stride</b> della sinistra e la <b>sincope</b> della destra, spiegati passo per passo.</p>
+    <a class="cta" href="Corso_Piano_Ragtime.zip">Scarica il corso gratis
+      <small>10 esercizi · MIDI + ascolti · 4 MB</small></a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Per chi &egrave;</h2>
+    <p>Per chi vuole imparare il ragtime &mdash; la musica allegra e saltellante che ha dato origine al
+    jazz &mdash; <b>da zero</b> e <b>a qualsiasi et&agrave;</b>. Se hai una tastiera e un computer, hai
+    tutto. Gli esercizi partono dal primo tocco e arrivano a un vero <i>strain</i> di ragtime.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cosa contiene</h2>
+    <div class="grid">
+      <div class="card"><div class="n">10</div><h3>Esercizi progressivi</h3>
+        <p>Dallo stride di base alla sincope, al cakewalk, fino a uno strain completo con turnaround.</p></div>
+      <div class="card"><div class="n">2</div><h3>Le due mani separate</h3>
+        <p>Sinistra (stride) e destra (melodia sincopata) su righe distinte, per studiarle una alla volta.</p></div>
+      <div class="card"><div class="n">&#10003;</div><h3>Verificati</h3>
+        <p>Ogni nota della destra appartiene all'accordo della battuta: controllo armonico automatico.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Come funziona</h2>
+    <ul class="clean">
+      <li>Scarichi il corso e una delle app consigliate qui sotto.</li>
+      <li>Apri un esercizio: vedi le note scendere, una riga per la destra e una per la sinistra.</li>
+      <li>Con la <b>modalit&agrave; di attesa</b>, le note ti aspettano: non resti mai indietro.</li>
+      <li>Studi prima lo <b>stride</b> della sinistra, da solo e lento. Poi aggiungi la destra.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Con quale app si suona</h2>
+    <p>I file del corso sono in formato <b>MIDI</b>. Ti serve un'app che li mostri come
+    &ldquo;note che scendono&rdquo;. Scegli quella che preferisci:</p>
+    <div class="apps">
+      <div class="app"><b>Synthesia</b><span>Consigliata. Da scaricare (PC, Mac, tablet). Versione
+        gratuita limitata, completa a pagamento.</span></div>
+      <div class="app"><b>Neothesia</b><span class="free">Gratis</span><span>Da scaricare, PC/Mac/Linux.</span></div>
+      <div class="app"><b>PianoFall / Midiano</b><span class="free">Gratis</span><span>Nel browser, senza installare.</span></div>
+      <div class="app"><b>MuseScore 4</b><span class="free">Gratis</span><span>Suona i file e mostra lo spartito.</span></div>
+    </div>
+    <div class="note" style="border-left-color:var(--accent)">
+      <b>Vuoi lezioni guidate passo-passo?</b> Due opzioni usate dai principianti adulti:
+      <!-- AFFILIATO: sostituisci con il tuo link affiliato -->
+      <a class="aff-link" href="https://www.flowkey.com/" target="_blank" rel="sponsored noopener"><b>flowkey</b></a> e
+      <a class="aff-link" href="https://www.playgroundsessions.com/" target="_blank" rel="sponsored noopener"><b>Playground Sessions</b></a>.
+      Il corso resta gratuito: queste sono un di pi&ugrave;.
+    </div>
+    <p class="note">Alcuni link sono affiliati: se acquisti passando da questi link, il corso riceve
+    una piccola commissione <b>senza costi aggiuntivi per te</b>. Le opzioni gratuite restano quelle sopra.</p>
+  </div>
+</section>
+
+<div class="download2">
+  <div class="wrap">
+    <h2 style="border:0">Pronto a cominciare?</h2>
+    <p style="color:var(--ink2);margin-bottom:24px">&Egrave; gratis. Un tasto alla volta.</p>
+    <a class="cta" href="Corso_Piano_Ragtime.zip">Scarica il corso gratis
+      <small>10 esercizi · MIDI + ascolti · 4 MB</small></a>
+  </div>
+</div>
+
+<section class="donate">
+  <div class="wrap center">
+    <div class="coffee">&#9749;</div>
+    <h2 style="border:0">Il corso &egrave; e resta gratuito</h2>
+    <p style="color:var(--ink2);max-width:560px;margin:8px auto 22px">Se ti &egrave; stato utile e ti
+    va, puoi offrirmi un caff&egrave;. &Egrave; solo un pensiero, mai un obbligo.</p>
+    <a class="cta donate-btn" href="https://ko-fi.com/corsopianoboogie" target="_blank" rel="noopener">Offrimi un caff&egrave; &#9834;</a>
+    <p style="color:var(--muted);font-size:.85rem;margin-top:16px">Donazioni gestite in sicurezza
+    tramite <b>Ko-fi</b> &mdash; non serve un account per donare.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Corso gratuito di pianoforte &mdash; Ragtime. Gli esercizi sono materiale originale, liberi da
+    usare e condividere per studiare. Fa parte della stessa famiglia del
+    <a href="https://marinovinc.github.io/corso-piano/" style="color:var(--accent)">corso di Boogie &amp; Blues</a>.</p>
+  </div>
+  <p style="margin-top:10px"><a href="https://corsopianoboogie.goatcounter.com" target="_blank" rel="noopener" style="color:var(--muted);font-size:13px;text-decoration:none">Statistiche del sito</a></p>
+</footer>
+
+<script>addEventListener('load',function(){function ev(s,p){document.querySelectorAll(s).forEach(function(a){a.addEventListener('click',function(){if(window.goatcounter&&goatcounter.count)goatcounter.count({path:p,title:p,event:true});});});}ev('a[href$=".zip"]','download-ragtime');ev('a.donate-btn','click-donazione');ev('a.aff-link','click-affiliato-ragtime');});</script>
+</body>
+</html>
