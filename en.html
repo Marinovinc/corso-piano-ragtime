@@ -15,7 +15,12 @@
            --accent:#e08a3c; --accent-d:#c9742a; --accent2:#5bbf93; --line:#3a2e1d; --card:#221a10; }
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+  body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.72 system-ui,-apple-system,"Segoe UI",sans-serif}
+  .courses .card{display:flex;flex-direction:column}
+  .courses .card h3{font-size:1.2rem;margin:.2em 0 .4em}
+  .courses .card .go{margin-top:auto;color:var(--accent);font-weight:800;text-decoration:none;font-size:1.05rem}
+  .courses .here{border-color:var(--accent);border-width:2px}
+  .courses .here .tag{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-top:6px;align-self:flex-start}
   .wrap{max-width:900px;margin:0 auto;padding:0 22px}
   header.hero{background:linear-gradient(160deg,var(--accent) 0%,var(--accent-d) 100%);color:#fff;padding:64px 0 56px;text-align:center}
   .lang{text-align:right;margin-bottom:10px;font-size:.95rem}
@@ -128,6 +133,25 @@
   </div>
 </section>
 
+<section class="courses">
+  <div class="wrap">
+    <h2>All our courses</h2>
+    <p>They're all <b>free</b>, with files to play and audio. Pick the style that inspires you most.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>&#127929; Boogie-Woogie &amp; Blues</h3>
+        <p>40 two-hand exercises, from scratch. The course to start with.</p>
+        <a class="go" href="https://marinovinc.github.io/corso-piano/en.html">Go to the course &rarr;</a>
+      </div>
+      <div class="card here">
+        <h3>&#127929; Ragtime</h3>
+        <p>The left-hand stride and the right-hand syncopation: the ancestor of jazz.</p>
+        <span class="tag">You are here</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="download2">
   <div class="wrap">
     <h2 style="border:0">Ready to start?</h2>
@@ -152,8 +176,7 @@
 <footer>
   <div class="wrap">
     <p>Free piano course &mdash; Ragtime. The exercises are original material, free to use and share
-    for learning. Part of the same family as the
-    <a href="https://marinovinc.github.io/corso-piano/en.html" style="color:var(--accent)">Boogie &amp; Blues course</a>.</p>
+    for learning.</p>
   </div>
   <p style="margin-top:10px"><a href="https://corsopianoboogie.goatcounter.com" target="_blank" rel="noopener" style="color:var(--muted);font-size:13px;text-decoration:none">Site statistics</a></p>
 </footer>
